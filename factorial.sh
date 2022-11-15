@@ -1,8 +1,11 @@
 #!/bin/bash
-read -p "enter a number :  " n;
- fact=1;
-for (( c=1; c<=$n; c++ ))
+read -p "Enter a number :     "   n
+echo "factorial of a number is "
+fact=1;
+for (( cnt=$n; cnt>0; cnt-- ))
 do
-   fact=$((fact*c));
+  fact=$(($fact * $cnt));
 done
-echo -n "$fact";
+echo "$fact"
+
+  
